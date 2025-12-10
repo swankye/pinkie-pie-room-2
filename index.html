@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/pinkemena.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>pinkamena</title>
+  </head>
+
+  <body>
+    <!-- LEFT COLUMN -->
+    <div class="collum">
+      <div class="line">
+        <div class="box center-content">
+          <img id="grey"class="clickable" src="images/cutie1.WEBP" onclick="clickObject(this)"/>
+          <img class="cutebutterfly clickable" id="grey" src="images/paint.WEBP" onclick="clickObject(this)"/>       
+        </div>
+      </div>
+
+      <div class="line">
+        <img id="green" class="shy2 center-content clickable" src="images/flutter.png" onclick="clickObject(this)"/>
+        <img id="grey"class="cutebutterfly clickable" src="images/heart.png" onclick="clickObject(this)"/>       
+      </div>
+
+      <div class="line">
+      <img id="yellow"class="apple center-content clickable" src="images/apple.png" onclick="clickObject(this)"/>
+      </div>
+
+      <div class="line">
+        <div class="box2 clickable center-content">
+          <img id="grey"src="images/cutie2.WEBP" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="rarebeefstake clickable center-content">
+          <img id="orange" src="images/rarity1.png" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="skull clickable center-content">
+          <img id="grey"src="images/cutie5.WEBP" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="chess clickable center-content">
+          <img id="grey"src="images/chess.PNG"onclick="clickObject(this)" />
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box5 clickable center-content">
+          <img id="grey"src="images/cake.WEBP" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box6 clickable center-content">
+          <img id="grey"src="images/icecream.WEBP" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box7 clickable center-content">
+          <img id="grey" src="images/lolly.WEBP"onclick="clickObject(this)" />
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box8 clickable center-content">
+          <img id="grey"src="images/dumb.WEBP"onclick="clickObject(this)" />
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box9 center-content">
+          <img id="grey"src="images/kyelimepie.WEBP"class="clickable" onclick="clickObject(this)"/>
+          <img id="red" class="rainbow clickable center-content" src="images/dash.png" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box10 center-content">
+          <img id="grey" src="images/disk.WEBP"class="clickable" onclick="clickObject(this)"/>
+          <img class="clickable celabrate" id="blue" src="images/twilight.png" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="box11 clickable center-content">
+          <img id="grey"src="images/grape.WEBP" onclick="clickObject(this)"/>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="box100 center-content">
+        <img class="clickable match"src="images/match.png" onclick="clickmatch(this)"/>
+      </div>
+    </div>
+    <!-- END collum -->
+
+    <!-- RIGHT COLUMN -->
+    <div class="collum2">
+      <div class="skinnycollum "></div>
+
+      <div class="skinnycollum">
+        <div class="lock-row"></div>
+        <div class="lock-row"></div>
+
+        <div class="lock-row clickable center-content">
+          <img src="images/aaple.png" onclick="openModal()" class="puzleimg" />
+        </div>
+        <div class="lock-row">
+        </div>
+        <div class="lock-row">
+          <img src="images/anwserkye.png" class="anwserkye"/>
+        </div>
+      </div>
+
+      <div class="skinnycollum"></div>
+    </div>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+          const x = e.clientX + "px";
+          const y = e.clientY + "px";
+      
+          document.documentElement.style.setProperty("--x", x);
+          document.documentElement.style.setProperty("--y", y);
+      
+          const dot = document.getElementById("cursorDot");
+          dot.style.left = x;
+          dot.style.top = y;
+      });
+      </script>
+      
+    <!-- MODAL -->
+    <div class="modal center-content" id="myModal">
+      <span class="close" onclick="hideModal()">&times;</span>
+
+      <div class="modal-body center-content">
+        <div class="modal-inner-body">
+          <div class="key-rows">
+            <div
+              class=" twilightmodal key-button center-content clickable"
+              onclick="twilight()"
+            >
+              <img src="images/twilight.png" />
+            </div>
+            <div class="heartmodal key-button clickable"onclick="wrongclick()">
+              <img src="images/heart.png" />
+            </div>
+            <div class="cutiecrusaders key-button clickable"onclick="wrongclick()">
+              <img src="images/png-transparent-cutie-mark-crusaders-golden-apple-love-blue-text-removebg-preview.png" id="first" />
+            </div>
+          </div>
+
+          <div class="key-rows">
+            <div class="cupcakemodal key-button clickable"onclick="wrongclick()">
+              <img src="images/cake.WEBP" id="first" />
+            </div>
+            <div class="dashmodal key-button center-content clickable" onclick="dash()">
+              <img src="images/dash.png" id="first" />
+            </div>
+            <div class="lollypopmodal key-button clickable"onclick="wrongclick()">
+              <img src="images/lolly.WEBP" />
+            </div>
+          </div>
+
+          <div class="key-rows">
+            <div class="skullmodal key-button clickable"onclick="wrongclick()">
+              <img src="images/cutie5.WEBP" />
+            </div>
+            <div class="chessmodal key-button clickable"onclick="wrongclick()">
+              <img src="images/cutie3.PNG" />
+            </div>
+            <div class="raritymodal key-button center-content clickable" onclick="rarity()">
+              <img src="images/rarity1.png" />
+            </div>
+          </div>
+
+          <div class="key-rows">
+            <div class="fluttershymodal key-button box13 center-content clickable" onclick="shy()">
+              <img src="images/flutter.png"  />
+            </div>
+            <div class="kyelimepiemodal key-button clickable" onclick="wrongclick()">
+              <img src="images/kyelimepie.WEBP" />
+            </div>
+            <div class="dumbellmodal key-button clickable" onclick="wrongclick()">
+              <img src="images/dumb.WEBP" />
+            </div>
+          </div>
+
+          <div class="key-rows">
+            <div class="icecreammodal key-button clickable" onclick="wrongclick()">
+              <img src="images/icecream.WEBP" />
+            </div>
+            <div class="applejackmodal key-button clickable" onclick="apple()">
+              <img src="images/apple.png" />
+            </div>
+            <div class="paintmodal key-button clickable" onclick="wrongclick()">
+              <img src="images/paint.WEBP" />
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <audio src="sounds/squee.wav" id="my_song"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
